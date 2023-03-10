@@ -13,13 +13,12 @@
 #**
 import random
 import hashlib
-import threading
 import sys
 import os
 import socket
 import time
 from click import command
-import requests, json
+import requests
 from colorama import init , Style,Fore
 import http.client
 init()
