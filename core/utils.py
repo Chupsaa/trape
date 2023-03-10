@@ -18,6 +18,7 @@ import sys
 import os
 import socket
 import time
+from click import command
 import requests, json
 from colorama import init , Style,Fore
 import http.client
@@ -157,7 +158,7 @@ class utils:
     # Autocompletion
     @staticmethod
     def niceShell(text, state):
-        matches = [i for i in commands if i.startswith(text)]
+        matches = [i for i in command if i.startswith(text)]
         if state < len(matches):
             return matches[state]
         else:
